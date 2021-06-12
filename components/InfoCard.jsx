@@ -7,12 +7,12 @@ const [isOpen, setIsOpen] = useState(false)
   return (
       <CardWrapper>
         <Text>
-          Buy and sell real Mango Market Caps!
-          Choose between <i>Mango</i> or <i>Black</i> on redemption.
-          
+          Come get your limited time shades for a Boring Summer!
+          Choose between <i>OrangeCrush</i> or <i>BlueWave</i> on redemption.
+
           <br />
           <br />
-          Free shipping worldwide.
+          shipping worldwide.
           <a
           onClick={() => setIsOpen(true)}
           style={{
@@ -29,7 +29,7 @@ const [isOpen, setIsOpen] = useState(false)
 
 const CardWrapper = styled.div`
   background: #EFEDF9;
-  border-radius: 0 0 20px 20px; 
+  border-radius: 0 0 20px 20px;
   color: #000;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,3 @@ const Text = styled.p`
   width: 100%;
   margin: 0;
 `
-
-
-
-

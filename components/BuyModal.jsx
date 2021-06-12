@@ -81,8 +81,8 @@ export default function BuyModal({ open, onClose }) {
       <OVERLAY_STYLES> </OVERLAY_STYLES>
       <CardWrapper>
         <FullWidth>
-          <Title>Mango Market Caps Edition 0</Title>
-          <SubTitle>$MCAPS</SubTitle>
+          <Title>Boring NFT Event</Title>
+          <SubTitle>$BOPVIP</SubTitle>
           <Gallery />
           <MarketData>
             <span>
@@ -110,7 +110,7 @@ export default function BuyModal({ open, onClose }) {
         </FullWidth>
       </CardWrapper>
       <InfoCard>
-        <TitleSub>Here's what you owe:</TitleSub>
+        <TitleSub>total price:</TitleSub>
         <Price>
           ${formattedPrice}{" "}
           <img
@@ -134,7 +134,7 @@ export default function BuyModal({ open, onClose }) {
         >
           {loadingAccounts && "⏳ (confirm in wallet) "}
           {!loadingAccounts && !(wallet && connected) && "Connect Wallet"}
-          {!loadingAccounts && wallet && connected && (hasReachedScalperLimit ? "You bought too many caps! 😅" : "Buy")}
+          {!loadingAccounts && wallet && connected && (hasReachedScalperLimit ? "You bought too many sunglasses! 😅" : "Buy")}
         </Button>
         <br />
         <button onClick={onClose}>Close</button>
@@ -285,7 +285,7 @@ const Button = styled.button`
   }
 `
 
-/*  
+/*
 These are styles for error button and
 disconnected button if it helps!
 */

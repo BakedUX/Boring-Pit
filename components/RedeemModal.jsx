@@ -99,9 +99,9 @@ export default function RedeemModal({ open, onClose }) {
       <OVERLAY_STYLES> </OVERLAY_STYLES>
       <RedeemWrapper>
         <CardWrapper>
-          <Title>Redeem your $MCAPS</Title>
+          <Title>Redeem your $BOPVIP</Title>
           <SubTitle>
-            Mango Market Caps are redeemable worldwide, please give 1-2 weeks shipping based on location.
+            Boring Summer Vipers are redeemable worldwide, please give at least 1-2 weeks shipping based on location.
           </SubTitle>
           <GalleryRedeem style={style} />
           <FullWidth>
@@ -367,7 +367,7 @@ const Input = styled.input`
   }
 `
 
-/*  
+/*
 These are styles for error button and
 disconnected button if it helps!
 */

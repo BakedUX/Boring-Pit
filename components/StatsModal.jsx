@@ -19,14 +19,14 @@ export default function StatsModal({open, onClose}) {
         <>
         <OVERLAY_STYLES> </OVERLAY_STYLES>
         <CardWrapper>
-        <Title>$MCAPS Stats</Title>
+        <Title>$BOPVIP Stats</Title>
         <br />
           <Description>
               <p>
                 <span>
                   🧢&thinsp;
                 </span>
-                Initial $MCAPS
+                Initial $BOPVIP
               </p>
               <p>{initial}</p>
           </Description>
@@ -35,7 +35,7 @@ export default function StatsModal({open, onClose}) {
                 <span>
                   🔥&thinsp;
                 </span>
-                Redeemed $MCAPS
+                Redeemed $BOPVIP
               </p>
               <p>{redeemed}</p>
           </Description>
@@ -44,13 +44,13 @@ export default function StatsModal({open, onClose}) {
                 <span>
                   💦&thinsp;
                 </span>
-                Remaining $MCAPS
+                Remaining $BOPVIP
               </p>
               <p>{poolCapBalance}</p>
           </Description>
           <Shim />
           <Text>
-          The price of MCAPS changes when tokens are bought and sold.
+          The price of $BOPVIP is dynamic
           </Text>
 
           <br />
@@ -95,7 +95,7 @@ const CardWrapper = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 20px; 
+  border-radius: 20px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -123,5 +123,3 @@ const OVERLAY_STYLES = styled.div`
   opacity: .8;
   z-index:998;
 `
-
-

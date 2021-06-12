@@ -70,8 +70,8 @@ export default function SellModal({open, onClose}) {
     <>
         <OVERLAY_STYLES> </OVERLAY_STYLES>
         <CardWrapper>
-        <Title>Mango Market Caps Edition 0</Title>
-          <SubTitle>$MCAPS</SubTitle>
+        <Title>Boring Summer NFT Event</Title>
+          <SubTitle>$BOPVIP</SubTitle>
           <Gallery />
           <FullWidth>
           <MarketData>
@@ -102,7 +102,7 @@ export default function SellModal({open, onClose}) {
           </FullWidth>
         </CardWrapper>
         <InfoCard>
-          <TitleSub>Here's what you'll receive:</TitleSub>
+          <TitleSub>If you are randomly selected from our auction winners, You will recieve:</TitleSub>
           <Price>${formattedPrice}&thinsp;<img
       height="30px"
       width="30px"
@@ -118,8 +118,8 @@ export default function SellModal({open, onClose}) {
             opacity: loadingAccounts ? "50%" : "100%"}}>
             { loadingAccounts && "⏳ (confirm in wallet) " }
             { !loadingAccounts && (wallet && connected ? "Sell" : "Connect Wallet" ) }
-          </Button>  
-          <br />  
+          </Button>
+          <br />
           <button onClick={onClose}>Close</button>
         </InfoCard>
         </>
@@ -149,7 +149,7 @@ const CardWrapper = styled.div`
   top: 400px;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 20px; 
+  border-radius: 20px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -266,7 +266,7 @@ const Button = styled.button`
 
 `
 
-/*  
+/*
 These are styles for error button and
 disconnected button if it helps!
 */
@@ -307,4 +307,3 @@ const ButtonError = styled.button`
   align-items: center;
 
 `*/
-

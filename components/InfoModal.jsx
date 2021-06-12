@@ -13,28 +13,26 @@ if (!open) return null
           <Title><img
         height="24px"
         width="24px"
-        src="/mcap_logo_round.png"
+        src="/mcap_logo_round.png"   **REPLACE**
         style={{
           display: 'inline-block',
           verticalAlign: 'middle',
         }}
-      /> $MCAPS</Title>
+      /> $BOPVIP</Title>
                 </div>
                 <br />
           <Text>
-            <b>Here’s how it works:</b>
-          <br /> 
-          $MCAPS is a token that entitles you to 1 real 
-          limited edition cap, shipped globally. You can sell the token back 
-          at any time or to redeem a real cap, burn an $MCAPS token.
+            <b>TL:DR??:</b>
+          <br />
+          $BOPVIP is a token that lets you enter into a lottery
+          for the limited editon Boring Summer shades
           </Text>
           <br />
           <Text>
             <b>How it’s priced: </b>
-          <br /> 
-          $MCAPS tokens are listed starting at $15 USDC.
-          Each buy/sell will move the price. 
-          The increase or decrease follows a &nbsp;
+          <br />
+          $BOPVIP tokens are listed starting at $420.69 USDC.
+          The increase or decrease in price after a purchase follows a &nbsp;
           <a style={{textDecoration: 'underline'}} href="https://blog.relevant.community/bonding-curves-in-depth-intuition-parametrization-d3905a681e0a">
             bonding curve
           </a>.
@@ -42,7 +40,7 @@ if (!open) return null
           <br />
           <b>Disclaimer:</b>
           <br />
-          The redeemable token is <b>not connected</b> to our upcoming protocol and governance. This is an unaudited smart contract; the smart contract code can be found <a style={{textDecoration: 'underline'}} href="https://github.com/blockworks-foundation/solana-program-library/tree/caps">here.</a>
+          The redeemable token is <b>not connected</b> to our protocol and governance. This is an unaudited smart contract; the smart contract code can be found <a style={{textDecoration: 'underline'}} href="https://github.com/blockworks-foundation/solana-program-library/tree/caps">here.</a>
           </Text>
           <br />
           <button onClick={onClose}>Close</button>
@@ -59,7 +57,7 @@ const CardWrapper = styled.div`
   width: 400px;
   height: auto;
   background: #EFEDF9;
-  border-radius: 20px; 
+  border-radius: 20px;
   color: #000;
   display: flex;
   flex-direction: column;
@@ -94,4 +92,3 @@ const Title = styled.p`
   margin: 0;
   vertical-align: middle;
 `
-

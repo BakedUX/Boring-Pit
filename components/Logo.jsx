@@ -4,7 +4,7 @@ export default function Logo() {
       <img
         height="40px"
         width="40px"
-        src="/mcap_logo_round.png"
+        src="/mcap_logo_round.png"  **REPLACE**
         style={{
           display: 'inline-block',
           verticalAlign: 'middle',
@@ -20,7 +20,7 @@ export default function Logo() {
           verticalAlign: 'middle',
         }}
       >
-        Mango Market Caps
+        Boring Summer NFT Event
       </div>
     </>
   );

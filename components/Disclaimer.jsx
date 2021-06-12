@@ -24,7 +24,7 @@ export default function Disclaimer() {
   const margin = { marginRight: '10px'};
   return (
 
-    
+
     <>
     <Text>
     <img
@@ -33,9 +33,8 @@ export default function Disclaimer() {
           src="/error4.svg"
           style={margin}
         />
-        <span>This redeemable token is <b>not connected</b> to our upcoming protocol and governance.</span>
+        <span>This redeemable token is <b>not connected</b> to our protocol and governance.</span>
     </Text>
     </>
   );
 }
-

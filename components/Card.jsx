@@ -19,8 +19,8 @@ export default function Card() {
         options={{ scale: 1.01, max: 10, glare: true, "max-glare": 1, speed: 1000 }}
       >
         <CardWrapper>
-          <Title>Mango Market Caps Edition 0</Title>
-          <SubTitle>$MCAPS</SubTitle>
+          <Title>Boring NFT Event</Title>
+          <SubTitle>$BOPVIP</SubTitle>
           <Gallery />
           <MarketData>
             <span>

@@ -45,7 +45,7 @@ export default function Home() {
   return (
     <Page>
       <Head>
-        <title>Mango Market Caps</title>
+        <title>Boring Summer NFT Event</title>
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
@@ -73,11 +73,11 @@ export default function Home() {
           <WalletButton />
         </div>
       </div>
-  
+
       <div className="flex justify-center">
         <Content>
           <Card />
-          <InfoCard />       
+          <InfoCard />
           <BuyButton />
           <div className="flex">
             <SellButton />

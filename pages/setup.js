@@ -59,7 +59,7 @@ export default function Setup() {
           amount: 0,
         }],
         { curveType: CurveType.ConstantProductWithOffset,
-          token_b_offset: new u64(config.capAmount * 15 * Math.pow(10, config.usdDecimals)).toBuffer(),
+          token_b_offset: new u64(config.capAmount * 420.69 * Math.pow(10, config.usdDecimals)).toBuffer(), **DOUBLE CHECK**
           tradeFeeNumerator: 25,
           tradeFeeDenominator: 10000,
           ownerTradeFeeNumerator: 25,

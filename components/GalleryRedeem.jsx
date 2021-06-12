@@ -21,9 +21,9 @@ export default function GalleryRedeem({ style }) {
     <>
       <GalleryFrame>
         {style === "black" ? (
-          <ImgStyle src="/caps/mcap_black.png" alt="Logo" />
+          <ImgStyle src="/caps/mcap_black.png" alt="Logo" />  **REPLACE**
         ) : (
-          <ImgStyle src="/caps/mcap_gold.png" alt="Logo" />
+          <ImgStyle src="/caps/mcap_gold.png" alt="Logo" />  **REPLACE**
         )}
       </GalleryFrame>
     </>

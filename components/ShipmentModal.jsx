@@ -41,7 +41,7 @@ export default function ShipmentModal({owner, open, onClose}) {
           <Shim />
           <Text>
             Your orders might take up to two weeks to be shipped depending on the destination.
-            If you did not receive it, please reach out on discord or send us an <b><a href="mailto:hello@blockworks.foundation">email</a></b>.
+            If you did not receive it, please reach out on discord or send us an <b><a href="mailto:bophelp@gmail.com">email</a></b>.
           </Text>
 
           <br />
@@ -86,7 +86,7 @@ const CardWrapper = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 20px; 
+  border-radius: 20px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -114,6 +114,3 @@ const OVERLAY_STYLES = styled.div`
   opacity: .8;
   z-index:998;
 `
-
-
-

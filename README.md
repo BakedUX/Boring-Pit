@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 Create a local `.env` file that sets `DATABASE_URL=` with the heroku
-postgres url: https://dashboard.heroku.com/apps/mango-caps/resources
+postgres url: https://dashboard.heroku.com/apps/mango-caps/resources  **REPLACE**
 
 ```bash
 yarn # install dependencies
@@ -17,8 +17,8 @@ npx prisma studio # launch DB admin panel
 ```bash
 spl-token create-token --decimals 0
 # Creating token 2prC8tcVsXwVJAinhxd2zeMeWMWaVyzPoQeLKyDZRFKd
-spl-token create-account 2prC8tcVsXwVJAinhxd2zeMeWMWaVyzPoQeLKyDZRFKd
-spl-token mint 2prC8tcVsXwVJAinhxd2zeMeWMWaVyzPoQeLKyDZRFKd 500
+spl-token create-account 2prC8tcVsXwVJAinhxd2zeMeWMWaVyzPoQeLKyDZRFKd  **REPLACE with nft account**
+spl-token mint 2prC8tcVsXwVJAinhxd2zeMeWMWaVyzPoQeLKyDZRFKd 500 **REPLACE 500 with 50**
 spl-token authorize 2prC8tcVsXwVJAinhxd2zeMeWMWaVyzPoQeLKyDZRFKd mint --disable
 ```
 
