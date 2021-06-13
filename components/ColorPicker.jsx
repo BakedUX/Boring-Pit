@@ -1,7 +1,7 @@
 import React from "react"
 import styled, { css } from "styled-components"
 
-export default function BuyButton({ setStyle, style }) {
+export default function BuyButton({ setStyle, style }) {  //**REPLACE for whatever colors chosen**
   return (
     <>
       <ButtonWrapper>
@@ -21,7 +21,7 @@ const ButtonWrapper = styled.div`
   border-radius: 15px;
   margin: 15px 0;
 `
-const Mango = styled.button`
+const Mango = styled.button`       /*REPLACE*/
   height: 50px;
   width: 100%;
   border: none;
@@ -58,7 +58,7 @@ const Mango = styled.button`
     box-shadow: 0px 2px 6px rgba(170, 131, 0, 0.29);
   }
 `
-const Black = styled.button`
+const Black = styled.button`           /*REPLACE*/
   height: 50px;
   width: 100%;
   border: none;

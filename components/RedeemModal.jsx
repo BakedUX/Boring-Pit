@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import CapCount from "../components/CapCount"
+import SunCount from "../components/SunCount" //**changed
 import ColorPicker from "../components/ColorPicker"
 import IncrementToken from "./IncrementToken"
 import GalleryRedeem from "./GalleryRedeem"
@@ -19,7 +19,7 @@ export default function RedeemModal({ open, onClose }) {
 
   const { connection, config } = useConnection()
   const { wallet, connected } = useWallet()
-  const { walletCapAccount, walletUsdAccount } = useAccounts()
+  const { walletCapAccount, walletUsdAccount } = useAccounts() //**REPLACE walletSunAccount
   const { pool } = usePool()
   const { amountToSell, setAmountToSell, amountAvailable, price, formattedPrice } = usePrice()
 
@@ -75,7 +75,7 @@ export default function RedeemModal({ open, onClose }) {
 
       const order = await createOrderRes.json()
 
-      const txHash = await redeem(connection, wallet, walletCapAccount, amountToSell, order.id.toString(), programIds)
+      const txHash = await redeem(connection, wallet, walletCapAccount, amountToSell, order.id.toString(), programIds) //**REPLACE walletSunAccount
 
       await fetch(`/api/order/${order.id}`, {
         method: "PUT",
@@ -91,7 +91,7 @@ export default function RedeemModal({ open, onClose }) {
     }
   }
 
-  const loadingAccounts = connected && !(walletUsdAccount && walletCapAccount && pool && !redeeming)
+  const loadingAccounts = connected && !(walletUsdAccount && walletCapAccount && pool && !redeeming) //**REPLACE walletSunAccount
   // TODO: add google autocomplete?: https://www.tracylum.com/blog/2017-05-20-autocomplete-an-address-with-a-react-form/
 
   return (
@@ -122,7 +122,7 @@ export default function RedeemModal({ open, onClose }) {
                 </CurrentPrice>
                 */}
 
-                <CapCount></CapCount>
+                <SunCount></SunCount> //**changed
               </span>
               <Increment>
                 <IncrementToken amount={amountToSell} setAmount={setAmountToSell} min={1} max={amountAvailable} />
@@ -143,7 +143,7 @@ export default function RedeemModal({ open, onClose }) {
               autocomplete="lastname-line-1"
               onChange={(e) => setLastName(e.target.value)}
               value={lastName}
-              placeholder="Dow"
+              placeholder="Doe"
             />
           </div>
           <FormTitle>E-mail:</FormTitle>

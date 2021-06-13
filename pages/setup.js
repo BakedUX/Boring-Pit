@@ -83,7 +83,7 @@ export default function Setup() {
         </div>
         <div>
           <Label>2.</Label>
-          USD / CAP
+          USD / CAP  //**REPLACE with SUN? or BOP?
           <pre>{walletUsdAccount?.pubkey?.toString()}</pre>
           <pre>{walletCapAccount?.pubkey?.toString()}</pre>
         </div>

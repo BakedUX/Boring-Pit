@@ -91,9 +91,9 @@ export default function SellModal({open, onClose}) {
               </CurrentPrice>
               */}
 
-            <CapCount>
+            <SunCount>
                 {`You own ${amountAvailable}`}
-            </CapCount>
+            </SunCount>
           </span>
           <Increment>
              <IncrementToken amount={amountToSell} setAmount={setAmountToSell} min={1} max={amountAvailable} />
@@ -192,7 +192,7 @@ const CurrentPrice = styled.p`
   margin-bottom: 0.5rem;
   font-feature-settings: 'tnum' on, 'onum' on;
 `
-const CapCount = styled.p`
+const SunCount = styled.p`
   color: #605a77;
   font-weight: 400;
   margin: 0px;

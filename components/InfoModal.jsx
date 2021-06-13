@@ -13,7 +13,7 @@ if (!open) return null
           <Title><img
         height="24px"
         width="24px"
-        src="/mcap_logo_round.png"   **REPLACE**
+        src="/BoringTestPic.png"   //**REPLACE**
         style={{
           display: 'inline-block',
           verticalAlign: 'middle',
@@ -24,8 +24,8 @@ if (!open) return null
           <Text>
             <b>TL:DR??:</b>
           <br />
-          $BOPVIP is a token that lets you enter into a lottery
-          for the limited editon Boring Summer shades
+          $BOPVIP is a token that allows you entry into a lottery
+          for limited editon Boring Summer sunglasses
           </Text>
           <br />
           <Text>

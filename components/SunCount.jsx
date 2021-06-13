@@ -26,7 +26,7 @@ const Text = styled.div`
 `
 
 
-export default function CapCount() {
+export default function SunCount() {
 
   const { walletCapBalance } = useAccounts();
 
@@ -34,7 +34,7 @@ export default function CapCount() {
 
   return (
     <>
-    { walletCapBalance > 0 &&
+    { walletCapBalance > 0 &&  /**REPLACE walletSunBalance**/
       <Button>
         <div style={centered}>
           &thinsp;{walletCapBalance}&ensp;
@@ -42,7 +42,7 @@ export default function CapCount() {
         <img
           height="30px"
           width="30px"
-          src="/mcap_logo_round.png"
+          src="/BoringTestPic.png" //**changed**
           style={centered}
         />
       </Button>
@@ -50,4 +50,3 @@ export default function CapCount() {
     </>
   );
 }
-

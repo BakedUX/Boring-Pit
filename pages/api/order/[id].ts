@@ -32,7 +32,7 @@ export default async function handle(req, res) {
 
   const memoIns = txIns.find(i => i.programId.toBase58() == MEMO_ID.toBase58());
   const memoText = memoIns.data.toString('utf-8');
-  const memoMatches = memoText === `🥭🧢#${orderId}`;
+  const memoMatches = memoText === `🥭🧢#${orderId}`;  //**REPLACE
 
   if (!burnIns || !memoMatches) {
     console.log({txHash, memoText, memoIns, burnIns});

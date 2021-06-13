@@ -37,7 +37,7 @@ export default function Card() {
                   }}
                 />
               </CurrentPrice>
-              <CapCount>{`${amountAvailable}/${totalSupply} available`}</CapCount>
+              <SunCount>{`${amountAvailable}/${totalSupply} available`}</SunCount> //**changed**
             </span>
             <button onClick={() => setShowInfo(true)}>
               <InfoButton>?</InfoButton>
@@ -86,7 +86,7 @@ const SubTitle = styled.p`
   font-feature-settings: "tnum" on, "onum" on;
 `
 
-const CapCount = styled.p`
+const SunCount = styled.p` /*changed*/
   color: #605a77;
   font-weight: 400;
   margin: 0px;

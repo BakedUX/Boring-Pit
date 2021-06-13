@@ -2,25 +2,25 @@ import React, { useContext, useEffect, useMemo, useState } from "react"
 
 import { Account, clusterApiUrl, Connection, Transaction, TransactionInstruction } from "@solana/web3.js"
 
-export const CFG = {
+/*export const CFG = {
   default: "mainnet-beta",
   "mainnet-beta": {
     url: "https://solana-api.projectserum.com/",
-    swapProgramId: "9bohspFveydu5Wg9Pm4mcLotLE2eBYMZ17G1aJ6ooqk1",
-    tokenProgramId: "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
-    capMint: "2prC8tcVsXwVJAinhxd2zeMeWMWaVyzPoQeLKyDZRFKd",
-    usdMint: "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  //  swapProgramId: "9bohspFveydu5Wg9Pm4mcLotLE2eBYMZ17G1aJ6ooqk1",  **REPLACE**
+  //  tokenProgramId: "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA", **REPLACE**
+  //  capMint: "2prC8tcVsXwVJAinhxd2zeMeWMWaVyzPoQeLKyDZRFKd",       **REPLACE**
+  //  usdMint: "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",     **REPLACE**
     usdDecimals: 6,
-    capAmount: 500,
+    capAmount: 50,
   },
   devnet: {
     url: clusterApiUrl("devnet"),
-    swapProgramId: "4agVeHTmm3Uis4Wt84NhrQXpEaV1Sb1HZmFvnkMQzDi4",
-    tokenProgramId: "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
-    capMint: "3qAPiwUSGuqkwkvaLXkKxaoSXr9SpQDMR2xgoPQTgW7j",
-    usdMint: "FUneZen4boSp7x3LJ1qYSd4grs2HCNQirot5pexTcBpX",
+  //  swapProgramId: "4agVeHTmm3Uis4Wt84NhrQXpEaV1Sb1HZmFvnkMQzDi4",  **REPLACE**
+  //  tokenProgramId: "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",  **REPLACE**
+  //  capMint: "3qAPiwUSGuqkwkvaLXkKxaoSXr9SpQDMR2xgoPQTgW7j",  **REPLACE**
+  //  usdMint: "FUneZen4boSp7x3LJ1qYSd4grs2HCNQirot5pexTcBpX",  **REPLACE**
     usdDecimals: 6,
-    capAmount: 500,
+    capAmount: 50,
   },
 }
 

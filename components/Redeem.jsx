@@ -20,18 +20,18 @@ const Button = styled.button`
 `
 
 export default function Redeem() {
-  const { walletCapAccount, walletCapBalance } = useAccounts()
+  const { walletCapAccount, walletCapBalance } = useAccounts() //**REPLACE walletSunBalance & walletSunAccount
 
   const [isOpen, setIsOpen] = useState(false)
-  const hasCap = walletCapBalance > 0
+  const hasCap = walletCapBalance > 0 //**REPLACE hasSun & walletSunBalance
 
   return (
     <>
       <Button
-        disabled={!hasCap}
+        disabled={!hasCap}  //**REPLACE hasSun
         style={{
-          opacity: hasCap ? 1.0 : 0.5,
-          cursor: hasCap ? "pointer" : "default",
+          opacity: hasCap ? 1.0 : 0.5, //**REPLACE hasSun
+          cursor: hasCap ? "pointer" : "default", //**REPLACE hasSun
         }}
         onClick={() => setIsOpen(true)}
       >

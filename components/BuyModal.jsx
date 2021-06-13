@@ -54,7 +54,7 @@ export default function BuyModal({ open, onClose }) {
           account: walletUsdAccount,
           amount: price * Math.pow(10, config.usdDecimals) * slippage,
         },
-        { mintAddress: config.capMint, account: walletCapAccount, amount: amountToBuy },
+        { mintAddress: config.capMint, account: walletCapAccount, amount: amountToBuy }, // **REPLACE walletSunAccount?**
       ]
       const programIds = {
         token: new PublicKey(config.tokenProgramId),
@@ -101,7 +101,7 @@ export default function BuyModal({ open, onClose }) {
               </CurrentPrice>
               */}
 
-              <CapCount>{`${amountAvailable}/${totalSupply} available`}</CapCount>
+              <SunCount>{`${amountAvailable}/${totalSupply} available`}</SunCount> //***changed**
             </span>
             <Increment>
               <IncrementToken amount={amountToBuy} setAmount={setAmountToBuy} min={0} max={scalperLimit} />
@@ -134,7 +134,7 @@ export default function BuyModal({ open, onClose }) {
         >
           {loadingAccounts && "⏳ (confirm in wallet) "}
           {!loadingAccounts && !(wallet && connected) && "Connect Wallet"}
-          {!loadingAccounts && wallet && connected && (hasReachedScalperLimit ? "You bought too many sunglasses! 😅" : "Buy")}
+          {!loadingAccounts && wallet && connected && (hasReachedScalperLimit ? "You bought too many sunglasses!" : "Buy")}
         </Button>
         <br />
         <button onClick={onClose}>Close</button>
@@ -212,7 +212,7 @@ const CurrentPrice = styled.p`
   font-feature-settings: "tnum" on, "onum" on;
 `
 
-const CapCount = styled.p`
+const SunCount = styled.p` /**changed**/
   color: #605a77;
   font-weight: 400;
   margin: 0px;

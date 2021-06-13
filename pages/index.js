@@ -7,7 +7,7 @@ import WalletButton from  '../components/WalletButton'
 import BuyButton from  '../components/BuyButton'
 import SellButton from  '../components/SellButton'
 import Redeem from  '../components/Redeem'
-import CapCount from  '../components/CapCount'
+import SunCount from  '../components/SunCount'
 import Disclaimer from  '../components/Disclaimer'
 
 
@@ -59,7 +59,7 @@ export default function Home() {
         </div>
         <div className="flex-grow" />
         <div className="flex-initial">
-          <CapCount />
+          <SunCount />
         </div>
         { /*
         <div className="flex-initial">

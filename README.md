@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 Create a local `.env` file that sets `DATABASE_URL=` with the heroku
-postgres url: https://dashboard.heroku.com/apps/mango-caps/resources  **REPLACE**
+postgres url: https://dashboard.heroku.com/apps/mango-caps/resources **REPLACE**
 
 ```bash
 yarn # install dependencies
